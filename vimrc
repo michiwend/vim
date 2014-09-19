@@ -154,6 +154,7 @@
     "Plugin 'kien/ctrlp.vim'
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'Lokaltog/vim-easymotion'
+    Plugin 'kien/ctrlp.vim'
 
     " Track the engine.
     "Plugin 'SirVer/ultisnips'
