@@ -3,6 +3,7 @@
 autocmd! bufwritepost .gvimrc source %  " Automatic reloading of .gvimrc
 
 " Solarized Colorscheme Config {
+    let g:solarized_termcolors=256
     let g:solarized_contrast="high"     "default value is normal
     let g:solarized_visibility="normal" "default value is normal
     set background=dark
