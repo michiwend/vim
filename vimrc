@@ -17,10 +17,7 @@
     set encoding=utf-8
 
     set tags=./tags;$HOME   " walk directory tree up to $HOME looking for tags
-
-
 " }
-
 " Mappings {
 
     " allow uppercase commands
@@ -32,7 +29,6 @@
     nmap <C-s> :w<CR>
     nmap <C-q> :qa<CR>
     nmap <C-t> :tabnew<CR>
-    nmap <C><b><g> :echo "hello"<CR>
 
     " Open TODOs and FIXMEs found recursively in all files of the current
     " directory in a QuickFix window
@@ -86,7 +82,6 @@
     " --> added after vundle!
 
 " }
-
 " Visual {
 
     set number          " Line numbers on
@@ -130,7 +125,6 @@
     " }
 
 " }
-
 " Vundle {
     " set the runtime path to include Vundle and initialize
     set rtp+=~/.vim/bundle/Vundle.vim
@@ -152,7 +146,6 @@
     Plugin 'jplaut/vim-arduino-ino'
     "Plugin 'xolox/vim-misc'
     "Plugin 'xolox/vim-session'
-    "Plugin 'kien/ctrlp.vim'
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'Lokaltog/vim-easymotion'
     Plugin 'kien/ctrlp.vim'
@@ -169,8 +162,7 @@
     call vundle#end()            " required
     filetype plugin indent on    " required
 " }
-
-" Plugins {
+" Plugin settings {
     " Airline {
         let g:airline_powerline_fonts=1
         let g:Powerline_symbols='fancy'
@@ -201,6 +193,7 @@
     " YCM {
         " Auto close preview window after completion
         let g:ycm_autoclose_preview_window_after_completion=1
+
     " }
 
     " Ultisnips {
