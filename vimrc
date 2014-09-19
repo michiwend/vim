@@ -106,8 +106,7 @@
         set foldenable          " Turn on folding
         "set foldmethod=marker   " Fold on the marker
         set foldmethod=syntax
-        set foldlevel=20        " Don't autofold anything
-                                " (but I can still fold manually)
+        set foldlevel=20         " no autofold
         set foldopen=block,hor,mark,percent,quickfix,tag " what movements open folds
     " }
 
@@ -168,16 +167,13 @@
         let g:airline_powerline_fonts=1
         let g:Powerline_symbols='fancy'
     " }
-
     " NERDTree {
         nmap <F7> :NERDTreeToggle<CR>
         let NERDTreeChDirMode=2
     " }
-
     " Tagbar {
         nmap <F8> :TagbarToggle<CR>
     " }
-
     " VIM-Go {
         " This trigger takes advantage of the fact that the quickfix window can be
         " easily distinguished by its file-type, qf. The wincmd J command is
@@ -190,20 +186,17 @@
 
         let g:go_fmt_command = "goimports"
     " }
-
     " YCM {
         " Auto close preview window after completion
         let g:ycm_autoclose_preview_window_after_completion=1
 
     " }
-
     " Ultisnips {
         " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
         " let g:UltiSnipsExpandTrigger="<c-s>"
         " let g:UltiSnipsJumpForwardTrigger="<c-b>"
         " let g:UltiSnipsJumpBackwardTrigger="<c-z>"
     " }
-    
     " Goyo and LimeLight {
         " settings moved to .gvimrc
      " }
