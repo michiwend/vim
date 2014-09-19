@@ -101,6 +101,8 @@
                         " Unprintable chars mapping
     set cursorline      " hightlight current line
 
+    set scrolloff=10
+
     " Folding {
         set foldenable          " Turn on folding
         "set foldmethod=marker   " Fold on the marker
