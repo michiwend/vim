@@ -3,7 +3,6 @@
 " General {
 
     autocmd! bufwritepost .vimrc source %   " Automatic reloading of .vimrc
-    autocmd! bufwritepost .gvimrc source %  " Automatic reloading of .gvimrc
 
     set nocompatible        " disable vi compatibility. (required for Vundle)
     set history=700         " Number of things to remember in history.
