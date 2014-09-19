@@ -206,33 +206,8 @@
     " }
     
     " Goyo and LimeLight {
-        nmap <F11> :Goyo<CR>
-        let g:goyo_width=100
-
-        let g:limelight_default_coefficient = 0.7
-
-        function! s:goyo_enter()
-          set noshowmode
-          set noshowcmd
-          set scrolloff=999
-          Limelight
-          " ...
-        endfunction
-
-        function! s:goyo_leave()
-          set showmode
-          set showcmd
-          set scrolloff=5
-          Limelight!
-          " ...
-        endfunction
-
-        autocmd! User GoyoEnter
-        autocmd! User GoyoLeave
-        autocmd  User GoyoEnter nested call <SID>goyo_enter()
-        autocmd  User GoyoLeave nested call <SID>goyo_leave()
-    " }
-
+        " settings moved to .gvimrc
+     " }
     " GitGutter {
         nmap <F6> :GitGutterLineHighlightsToggle<CR>
         set updatetime=100

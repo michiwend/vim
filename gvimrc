@@ -9,6 +9,34 @@
     colorscheme solarized
 " }
 
+" Goyo and LimeLight settings {
+    nmap <F11> :Goyo<CR>
+
+    let g:goyo_width=100
+
+    let g:limelight_default_coefficient = 0.7
+
+    function! s:goyo_enter()
+        set noshowmode
+        set noshowcmd
+        Limelight
+        " ...
+    endfunction
+
+    function! s:goyo_leave()
+        set showmode
+        set showcmd
+        set scrolloff=10
+        Limelight!
+        " ...
+    endfunction
+
+    autocmd! User GoyoEnter
+    autocmd! User GoyoLeave
+    autocmd  User GoyoEnter nested call <SID>goyo_enter()
+    autocmd  User GoyoLeave nested call <SID>goyo_leave()
+" }
+
 
 set gfn=Meslo\ LG\ S\ for\ Powerline\ 9 " Set font for gvim
 "set gfn=Menlo\ for\ Powerline\ 9
