@@ -19,6 +19,7 @@ autocmd! bufwritepost .gvimrc source %  " Automatic reloading of .gvimrc
     function! s:goyo_enter()
         set noshowmode
         set noshowcmd
+        set nofoldenable
         Limelight
         " ...
     endfunction
