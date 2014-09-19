@@ -211,6 +211,9 @@
         nmap <F6> :GitGutterLineHighlightsToggle<CR>
         set updatetime=100
     " }
+    " CtrlP {
+        let g:ctrlp_cmd = 'CtrlPMRU'
+    " }
 " }
 
 " syntax highlighting for arduino projects
