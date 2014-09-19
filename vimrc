@@ -157,6 +157,7 @@
     Plugin 'Lokaltog/vim-easymotion'
     Plugin 'kien/ctrlp.vim'
     Plugin 'junegunn/goyo.vim'
+    Plugin 'junegunn/limelight.vim'
     Plugin 'airblade/vim-gitgutter'
 
     " Track the engine.
@@ -209,9 +210,32 @@
         " let g:UltiSnipsJumpBackwardTrigger="<c-z>"
     " }
     
-    " Goyo {
-        nmap <F6> :Goyo<CR>
+    " Goyo and LimeLight {
+        nmap <F11> :Goyo<CR>
         let g:goyo_width=100
+
+        let g:limelight_default_coefficient = 0.7
+
+        function! s:goyo_enter()
+          set noshowmode
+          set noshowcmd
+          set scrolloff=999
+          Limelight
+          " ...
+        endfunction
+
+        function! s:goyo_leave()
+          set showmode
+          set showcmd
+          set scrolloff=5
+          Limelight!
+          " ...
+        endfunction
+
+        autocmd! User GoyoEnter
+        autocmd! User GoyoLeave
+        autocmd  User GoyoEnter nested call <SID>goyo_enter()
+        autocmd  User GoyoLeave nested call <SID>goyo_leave()
     " }
 
 " }
