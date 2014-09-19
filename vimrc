@@ -231,6 +231,10 @@
         autocmd  User GoyoLeave nested call <SID>goyo_leave()
     " }
 
+    " GitGutter {
+        nmap <F6> :GitGutterLineHighlightsToggle<CR>
+        set updatetime=100
+    " }
 " }
 
 " syntax highlighting for arduino projects
