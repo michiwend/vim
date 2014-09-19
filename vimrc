@@ -156,6 +156,7 @@
     Plugin 'Lokaltog/vim-easymotion'
     Plugin 'kien/ctrlp.vim'
     Plugin 'junegunn/goyo.vim'
+    Plugin 'airblade/vim-gitgutter'
 
     " Track the engine.
     "Plugin 'SirVer/ultisnips'
