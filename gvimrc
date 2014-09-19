@@ -20,6 +20,7 @@ autocmd! bufwritepost .gvimrc source %  " Automatic reloading of .gvimrc
         set noshowmode
         set noshowcmd
         set nofoldenable
+        set scrolloff=999
         Limelight
         " ...
     endfunction
