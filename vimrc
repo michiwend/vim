@@ -177,6 +177,7 @@
 
     " NERDTree {
         nmap <F7> :NERDTreeToggle<CR>
+        let NERDTreeChDirMode=2
     " }
 
     " Tagbar {
