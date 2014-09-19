@@ -208,6 +208,11 @@
         " let g:UltiSnipsJumpForwardTrigger="<c-b>"
         " let g:UltiSnipsJumpBackwardTrigger="<c-z>"
     " }
+    
+    " Goyo {
+        nmap <F6> :Goyo<CR>
+        let g:goyo_width=100
+    " }
 
 " }
 
