@@ -8,7 +8,7 @@
     set history=700         " Number of things to remember in history.
     set autowrite           " Writes on make/shell commands
     set autoread
-    set timeoutlen=250      " Time to wait after ESC
+    set timeoutlen=1000   " Time to wait after ESC
 
     set pastetoggle=<F2>    " toggle paste insert mode
     set clipboard+=unnamed
