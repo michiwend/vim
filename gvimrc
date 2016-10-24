@@ -2,12 +2,11 @@
 
 autocmd! bufwritepost .gvimrc source %  " Automatic reloading of .gvimrc
 
-" Solarized Colorscheme Config {
-    let g:solarized_termcolors=256
-    let g:solarized_contrast="high"     "default value is normal
-    let g:solarized_visibility="normal" "default value is normal
+" PENCIL COLORSCHEME CONFIG {
+    let g:pencil_higher_contrast_ui = 0   " 0=low (def), 1=high
+    let g:airline_theme = 'pencil'
+    colorscheme pencil
     set background=dark
-    colorscheme solarized
 " }
 
 " CUSTOM FOLD HEADERS {
