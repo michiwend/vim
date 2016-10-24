@@ -134,6 +134,7 @@
 
     Plugin 'gmarik/Vundle.vim'
 
+    Plugin 'michiwend/vim-colors-pencil'
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'majutsushi/tagbar'
