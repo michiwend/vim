@@ -62,12 +62,12 @@
 
     set backspace=indent,eol,start  " more powerful backspacing
 
-        set tabstop=4       " Set the default tabstop
-        set softtabstop=4
-        set shiftwidth=4    " Set the default shift width for indents
-        set expandtab       " Make tabs into spaces (set by tabstop)
-        set smarttab        " Smarter tab levels
     " INDENTATION {
+        set tabstop=8    " Set the default tabstop
+        set softtabstop=8
+        set shiftwidth=8 " Set the default shift width for indents
+        set noexpandtab  " Don't make tabs into spaces (set by tabstop)
+        set smarttab     " Smarter tab levels
 
         set autoindent
         set cindent
