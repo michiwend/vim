@@ -16,6 +16,8 @@
 
     set tags=./tags;$HOME " walk directory tree up to $HOME looking for tags
 
+    set directory=$HOME/.vim/swapfiles// " store swap files global
+
 " }
 
 " MAPPINGS {
