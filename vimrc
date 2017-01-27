@@ -150,7 +150,6 @@
         if !has('gui_running')
             set t_Co=256
             colorscheme wombat256mod
-            highlight ColorColumn ctermbg=233 " must be set after color scheme
         endif
     " }
 
@@ -225,3 +224,5 @@
 
 filetype off
 syntax on
+
+highlight ColorColumn ctermbg=236 " must be set after color scheme
