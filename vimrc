@@ -1,5 +1,32 @@
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker:
 
+" VUNDLE {
+
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+
+    Plugin 'gmarik/Vundle.vim'
+
+    Plugin 'michiwend/vim-colors-pencil'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
+    Plugin 'majutsushi/tagbar'
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    Plugin 'jdkanani/vim-material-theme'
+
+    Plugin 'SirVer/ultisnips'
+    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'fatih/vim-go'
+    Plugin 'Lokaltog/vim-easymotion'
+    Plugin 'airblade/vim-gitgutter'
+    Plugin 'junegunn/vim-easy-align'
+
+    call vundle#end()
+    filetype plugin indent on
+
+" }
+
 " GENERAL {
 
     autocmd! bufwritepost .vimrc source % " Automatic reloading of .vimrc
@@ -126,30 +153,6 @@
             highlight ColorColumn ctermbg=233 " must be set after color scheme
         endif
     " }
-
-" }
-
-" VUNDLE {
-
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-
-    Plugin 'gmarik/Vundle.vim'
-
-    Plugin 'michiwend/vim-colors-pencil'
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
-    Plugin 'majutsushi/tagbar'
-    Plugin 'scrooloose/nerdtree'
-    Plugin 'ctrlpvim/ctrlp.vim'
-
-    Plugin 'Valloric/YouCompleteMe'
-    Plugin 'fatih/vim-go'
-    Plugin 'Lokaltog/vim-easymotion'
-    Plugin 'airblade/vim-gitgutter'
-
-    call vundle#end()
-    filetype plugin indent on
 
 " }
 
